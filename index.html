@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+	    My Portfolio
+	</title>
+	
+	    <link href ="portfolio1.css" rel ="stylesheet" type ="text/css">
+		<script type ="text/javascript">
+function val1()
+	{
+	    var y = document.getElementById("user").value;
+        var t='';
+        var i;
+			for(i=0;i<y.length;i++)
+			    {
+		            if(y.charCodeAt(i)>=65 && y.charCodeAt(i)<=91 || y.charCodeAt(i)==32)
+		        {
+				    t += y.charAt(i);
+				}
+			    }
+	    document.getElementById("user").value = t;
+	}
+function val2()
+	{
+	        var y = document.getElementById("emailid").value;
+            var t='';
+            var i;
+			for(i=0;i<y.length;i++)
+			    {
+		            if(y.charCodeAt(i)>=97 && y.charCodeAt(i)<=121 || y.charCodeAt(i)==64 || y.charCodeAt(i)==32)
+		        {
+				    t += y.charAt(i);
+				}
+			    }
+			document.getElementById("emailid").value = t;
+    }
+function val5()
+	{
+	        var y = document.getElementById("address").value;
+            var t='';
+            var i;
+			for(i=0;i<y.length;i++)
+			    {
+		            if((y.charCodeAt(i)>=48 && y.charCodeAt(i)<=57) || (y.charCodeAt(i)==32) ||(y.charCodeAt(i)<=64))
+		        {
+				    t += y.charAt(i);
+				}
+			    }
+			document.getElementById("address").value = t;
+    }
+function val()
+{
+            var username = document.getElementById("user").value;
+			if(username=='')
+			{
+			    document.getElementById("user").focus();
+				alert("Please Enter User Name");
+				return false;
+			}
+			
+			var emailids = document.getElementById("emailid").value;
+			if(emailids=='')
+			{
+			    document.getElementById("emailid").focus();
+				alert("Please Enter Email Id");
+				return false;
+			}
+			alert("Message Sent");
+}
+		</script>
+</head>
+<body>
+<div class ="image"><img src ="image1.jpg"></div>
+    <div class="logo"><a href="#">Portfo<font color ="#00FF2A">lio.</font></a></div>
+	<!-- navigation section start -->
+	<div class ="navigation2"> 
+	    <div class ="navigation1"></div>
+	    <div class ="navigation1"></div>
+	    <div class ="navigation1"></div>
+	    <div class ="navigation1"><br/><br/><b><a href ="#">HOME</a></b></div>
+	    <div class ="navigation1"><br/><br/><b><a href ="#About Me">ABOUT</a></b></div>
+	    <div class ="navigation1"><br/><br/><b><a href ="#My Services">SERVICES</a></b></div>
+	    <div class ="navigation1"><br/><br/><b><a href ="#My Skills">SKILLS</a></b></div>
+	    <div class ="navigation1"><br/><br/><b><a href ="#My Projects">PROJECTS</a></b></div>
+	    <div class ="navigation1"><br/><br/><b><a href ="#Contact Me">CONTACT</a></b></div>
+	</div>
+	
+	<!-- name section start -->
+	<div class = "name1">Hello, my name is</div>
+	<div class = "name2">Rubal Singh</div>
+	<div class = "name3">And I'm a Web Developer.</div>
+	
+	<!-- aboutme section start -->
+	<div class = "about1">
+	    <div class ="about2"><a name ="About Me"><font size="50" color ="black">About Me
+		</font></a></div>
+	    <div class ="about3">-----<font color="#00FF2A;">Who i am</font>----</div>
+	    <div class ="about4"></div>
+	    <div class ="about5"><img src ="photo1.jpg" 
+		style ="height:340px;width:290px;border-radius:20px;"></div>
+	    <div class ="about6">I'm Rubal Singh and I'm a</div>
+	    <div class ="about7">SIET Nilokheri Student And Teksoft India ( IT solutions) certified front-end developer with 4 
+		months of experience who is comfortable working with javascript,HTML/CSS and a 
+		responsive web design to deliver exceptional customer experiences. I have proven 
+		experiences in ceating and designing software in test-driven environment.</div>
+		<div class ="about8"></div>
+		<div class ="about9"></div>
+		<div class ="about10"></div>
+	</div>
+	
+	<!-- My Services section start -->
+	<div class ="service1">
+	    <div class ="service2"><a name ="My Services"><font size="50" color ="white">My Services
+		</font></a></div>
+		<div class ="service3"><font color ="white">-----</font><font color="#00FF2A;">What i 
+		provide</font><font color ="white">----</font></div>
+		<div class ="service4">
+		    <div class ="service7">Web Design</div>
+		    <div class ="service8">The different areas of web design include web graphic design;
+			user interface design;including standard code and proprietary software; and user 
+			experience design; and search engine optimization.</div>
+		</div>
+		<div class ="service5">
+		    <div class ="service9">Front-end Developer</div>
+		    <div class ="service10">The one who builts the front -end and portion of website and
+			web applications -that is a part thst user actually see and interact with.HTML/CSS/
+			Js etc are used to design front-end for any website or app.</div>
+		</div>
+		<div class ="service6">
+		    <div class ="service11">Advertising</div>
+		    <div class ="service12">The article "advertising" explains that by selecting custom
+			as type of a banner ,it is possible to submit a completely customized HTML file and 
+			use it to create engaging advertising message.</div>
+		</div>
+	</div>
+	
+	<!-- My Skills section start -->
+	<div class ="skill1">
+	    <div class ="skill2"><a name ="My Skills"><font size="50" color ="black">My Skills
+		</font></a></div>
+		<div class ="skill3">-----<font color="#00FF2A;">What i know</font>----</div>
+		<div class ="skill4">My Creative Skills And Experiences.....</div>
+		<div class ="skill5">I have a lot of experience with HTML, along with CSS and JavaScript.
+		When I first began website design, HTML was as go-to. As I continued expanding this 
+		knowledge , I realized that adding both CSS and JavaScript to my repertoire would 
+		further enhance my skill set ,giving me the ability to make websites more useful, 
+		interactive, and more functional overall.i find these languages complement to each
+		other and help me keep the main newsfeed looking fresh and sharp.</div>
+		<div class ="skill6"><a href ="#"><font color ="black">HTML</font></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;-----------------------> 90%</div>
+		<div class ="skill7"><a href ="#"><font color ="black">CSS</font></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;-----------------------> 75%</div>
+		<div class ="skill8"><a href ="#"><font color ="black">JAVASCRIPT</font></a>
+		-----------------------> 85%</div>
+		<div class ="skill9"></div>
+		<div class ="skill10"></div>
+		<div class ="skill13"><img src ="htm.jpg"></div>
+		<div class ="skill11"></div>
+		<div class ="skill12"></div>
+	</div>
+	
+	<!-- My Projects section start -->
+	<div class = "project1">
+	    <div class ="project2"><a name ="My Projects"><font size="50" color ="white">My Projects
+		</font></a></div>
+	    <div class ="project3"><font color ="white">-----</font><font color="#00FF2A;">
+		What i designed</font><font color ="white">----</font></div>
+		<div class ="project4">
+		    <div class ="circle1"><a href ="AIMCETFORM.HTML"><img src ="aimcet.jpg" style ="height:150px;width:150px;
+			border-radius:100px;"></a></div>
+			<div class ="onlineform">Online Form Cum Enterence Test</div>
+			<div class ="onlineformdisc">The Online Form Cum Enterence Test is degigned to 
+			show thw validations and to complete the test within time and also displaying
+			the result after test submission.</div>
+		</div>
+		<div class ="project5">
+		    <div class ="circle2"><a href ="sbiatm.html"><img src ="atm.jpg" style ="height:150px;width:150px;
+			border-radius:100px;"></a></div>
+			<div class ="atm">Atm Machine</div>
+			<div class ="atmdisc">The Atm Machine only opens when the specific code is being 
+			entered into it and we can withdraw the money from it where it counts about the 
+			how many different notes we will recieve from the atm machine.</div>
+		</div>
+		<div class ="project6">
+		    <div class ="circle3"><a href ="votingmachine.html"><img src ="vote.jpg" style ="height:150px;width:150px;
+			border-radius:100px;"></a></div>
+			<div class ="vote">Voting Machine</div>
+			<div class ="votedisc">In this projects i had created dashboard containing all
+			the parties name where we vote for different parties and the result is being declared
+			by the dashboard and we are able to get the party which is having highest votes.</div>
+		</div>
+		<div class ="project7">
+		    <div class ="circle4"><a href ="MINDGAMEPAGE1.HTML"><img src ="game.jpg" style ="height:150px;width:150px;
+			border-radius:100px;"></a></div>
+			<div class ="puzzle">Puzzle Mind Games</div>
+			<div class ="puzzledisc">The Puzzle Mind games is bieng created for the fun and 
+			involves the use of image swapping where we had to create the same picture as 
+			described in origional form.</div>
+		</div>
+		<div class ="project8"><marquee  behavior ="alternate" scrollamount ="40">
+		    <img src ="33.jpg" style ="border-radius:40px;width:50px;height:50px;">
+		    <img src ="33.jpg" style ="border-radius:40px;width:50px;height:50px;">
+		    <img src ="33.jpg" style ="border-radius:40px;width:50px;height:50px;"></marquee>
+		</div>
+		<div class ="project9"></div>
+		<div class ="project10"></div>
+	</div>
+	
+	<!-- Contacts section start -->
+	<div class ="contact1">
+	    <div class ="contact2"><a name ="Contact Me"><font size ="50" color ="black"><font size ="90" color ="#0D0B5F">C</font>ontact Me
+		</font></a></div>
+		<div class ="contact3">-----<font color="#00FF2A;">Get in touch</font>----</div>
+		<div class ="contact4">Hello! how are you?<br/>Myself,</div>
+		<div class ="contact5">Name:-<br/><font color ="#0D0B5F">&nbsp;&nbsp;&nbsp;&nbsp;Rubal Singh</font><br/>
+		Address:-<br/><font color ="#0D0B5F">&nbsp;&nbsp;&nbsp;&nbsp;29-a kamal nagar Ambala Cantt</font><br/>
+		Emailid:-<br/><font color ="#0D0B5F">&nbsp;&nbsp;&nbsp;&nbsp;rubalsingh1824@gmail.com</font></div>
+		<div class ="contact6">Message Me</div>
+		<div class ="contact7"><input type ="textbox" placeholder ="Name in Block Letters" 
+		id ="user" onkeyup ="val1(this);" style ="border:3px solid black;width :280px;height:40px;border-radius:10px;"></div>
+		<div class ="contact8"><input type ="textbox" placeholder ="Email-Id" 
+		id ="emailid" onkeyup = "val2(this);" style ="border:3px solid black;width :280px;height:40px;border-radius:10px;"></div>
+		<div class ="contact9"><input type ="textbox" placeholder ="Subject" 
+		id ="user" onkeyup = "val1(this);" style ="border:3px solid black;width :585px;height:40px;border-radius:10px;"></div>
+		<div class ="contact10"><textarea cols ="52" rows ="5" id ="address" 
+		onkeyup = "val5(this);"></textarea></div>
+		<div class ="contact11"><a href ="#Contact Me"><input type ="button" 
+		value ="Send Message" onclick ="val();" style ="border:3px solid black;color:white;background-color:#0D0B5F;font-size:25px;border-radius:10px;font-size:20px;width :170px;height:70px;">
+		</a></div>
+	</div>
+	
+	<!-- Copyright section start -->
+	<div class ="copyright1">
+	    <div class ="copyright2">Created By <font color ="#00FF2A" size ="30"><a href ="#">
+		Rubal Singh</a></font>&nbsp;|&nbsp;&nbsp;&copy; 2022 All Rights Reserved</div>
+	</div>
+</body>
+</html>
